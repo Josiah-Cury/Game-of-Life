@@ -1,0 +1,24 @@
+\hypertarget{getopt__example_8c}{}\section{getopt\+\_\+example.\+c File Reference}
+\label{getopt__example_8c}\index{getopt\+\_\+example.\+c@{getopt\+\_\+example.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+Include dependency graph for getopt\+\_\+example.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{getopt__example_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{getopt__example_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{getopt__example_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{getopt\+\_\+example.\+c@{getopt\+\_\+example.\+c}!main@{main}}
+\index{main@{main}!getopt\+\_\+example.\+c@{getopt\+\_\+example.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+

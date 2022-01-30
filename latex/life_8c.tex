@@ -1,0 +1,139 @@
+\hypertarget{life_8c}{}\section{life.\+c File Reference}
+\label{life_8c}\index{life.\+c@{life.\+c}}
+
+
+functions for Conway\textquotesingle{}s Game of Life  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}life.\+h\char`\"{}}\newline
+Include dependency graph for life.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$$\ast$ \hyperlink{life_8c_a6ec790568db50837c9bca273440e585d}{init\+\_\+matrix} (int rows, int cols)
+\item 
+void \hyperlink{life_8c_afc6adbde5eca6ff2b8720beb34867ea3}{free\+\_\+matrix} (unsigned char $\ast$$\ast$A, int rows)
+\item 
+void \hyperlink{life_8c_a8ed2fe413b0d0fc7f7ebf10c744ed267}{hedge\+\_\+life} (unsigned char $\ast$$\ast$A, unsigned char $\ast$$\ast$B, int rows, int cols)
+\item 
+void \hyperlink{life_8c_a19b6c8b60272eaa45fac98243f51243f}{torus\+\_\+life} (unsigned char $\ast$$\ast$A, unsigned char $\ast$$\ast$B, int rows, int cols)
+\item 
+void \hyperlink{life_8c_ac5b2edcb3adceb221301d50a393631ff}{klein\+\_\+life} (unsigned char $\ast$$\ast$A, unsigned char $\ast$$\ast$B, int rows, int cols)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+functions for Conway\textquotesingle{}s Game of Life 
+
+Functions used in the Game of Life program. Contains the functions to initialize matrixes, to free matrixes, and three functions containing the main logic for cell reproduction with three different border patterns. \begin{DoxyAuthor}{Author}
+Josiah Cury 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+4/29/2019 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]Implement more error checking to make sure the initialization pattern is within parameters. \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]\end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{life_8c_afc6adbde5eca6ff2b8720beb34867ea3}\label{life_8c_afc6adbde5eca6ff2b8720beb34867ea3}} 
+\index{life.\+c@{life.\+c}!free\+\_\+matrix@{free\+\_\+matrix}}
+\index{free\+\_\+matrix@{free\+\_\+matrix}!life.\+c@{life.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+matrix()}{free\_matrix()}}
+{\footnotesize\ttfamily void free\+\_\+matrix (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{A,  }\item[{int}]{rows }\end{DoxyParamCaption})}
+
+\begin{DoxyRemark}{Remarks}
+Freeing the memory allocated for a 2 dimensional array, or a matrix 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$A} & matrix that is being freed \\
+\hline
+{\em rows} & the number of rows in the matrix assigned space \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{life_8c_a8ed2fe413b0d0fc7f7ebf10c744ed267}\label{life_8c_a8ed2fe413b0d0fc7f7ebf10c744ed267}} 
+\index{life.\+c@{life.\+c}!hedge\+\_\+life@{hedge\+\_\+life}}
+\index{hedge\+\_\+life@{hedge\+\_\+life}!life.\+c@{life.\+c}}
+\subsubsection{\texorpdfstring{hedge\+\_\+life()}{hedge\_life()}}
+{\footnotesize\ttfamily void hedge\+\_\+life (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{A,  }\item[{unsigned char $\ast$$\ast$}]{B,  }\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
+
+\begin{DoxyRemark}{Remarks}
+The logic determing which cells live or die for the next generation. This function has a border all around with permanently dead cells. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$A} & the initial generation. This generation will be searched through each cell to determine if it dies or lives. After assigning to the next generation, the initial is cleared and all life is reset to 0. \\
+\hline
+{\em $\ast$$\ast$B} & the next generation. This is the output or next generation. We will record the results of the initial matrix A to matrix B. \\
+\hline
+{\em rows} & the number of rows in the matrix assigned space \\
+\hline
+{\em cols} & the number of columns in the matrix assigned space \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{life_8c_a6ec790568db50837c9bca273440e585d}\label{life_8c_a6ec790568db50837c9bca273440e585d}} 
+\index{life.\+c@{life.\+c}!init\+\_\+matrix@{init\+\_\+matrix}}
+\index{init\+\_\+matrix@{init\+\_\+matrix}!life.\+c@{life.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+matrix()}{init\_matrix()}}
+{\footnotesize\ttfamily unsigned char$\ast$$\ast$ init\+\_\+matrix (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
+
+\begin{DoxyRemark}{Remarks}
+Initialized a 2 dimensional array, or a matrix 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & the number of rows in the matrix assigned space \\
+\hline
+{\em cols} & the number of columns in the matrix assigned space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer holding the memory address of the newly initialized matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{life_8c_ac5b2edcb3adceb221301d50a393631ff}\label{life_8c_ac5b2edcb3adceb221301d50a393631ff}} 
+\index{life.\+c@{life.\+c}!klein\+\_\+life@{klein\+\_\+life}}
+\index{klein\+\_\+life@{klein\+\_\+life}!life.\+c@{life.\+c}}
+\subsubsection{\texorpdfstring{klein\+\_\+life()}{klein\_life()}}
+{\footnotesize\ttfamily void klein\+\_\+life (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{A,  }\item[{unsigned char $\ast$$\ast$}]{B,  }\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
+
+\begin{DoxyRemark}{Remarks}
+The logic determing which cells live or die for the next generation. This function has a border that connects the top and bottom edges and inverts the left and right edges. (the top left is connected with the bottom right, the bottom left is connected with the top right.) 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$A} & the initial generation. This generation will be searched through each cell to determine if it dies or lives. After assigning to the next generation, the initial is cleared and all life is reset to 0. \\
+\hline
+{\em $\ast$$\ast$B} & the next generation. This is the output or next generation. We will record the results of the initial matrix A to matrix B. \\
+\hline
+{\em rows} & the number of rows in the matrix assigned space \\
+\hline
+{\em cols} & the number of columns in the matrix assigned space \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{life_8c_a19b6c8b60272eaa45fac98243f51243f}\label{life_8c_a19b6c8b60272eaa45fac98243f51243f}} 
+\index{life.\+c@{life.\+c}!torus\+\_\+life@{torus\+\_\+life}}
+\index{torus\+\_\+life@{torus\+\_\+life}!life.\+c@{life.\+c}}
+\subsubsection{\texorpdfstring{torus\+\_\+life()}{torus\_life()}}
+{\footnotesize\ttfamily void torus\+\_\+life (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{A,  }\item[{unsigned char $\ast$$\ast$}]{B,  }\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
+
+\begin{DoxyRemark}{Remarks}
+The logic determing which cells live or die for the next generation. This function has a border that connects the left and right edges and the top and bottom edges. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$A} & the initial generation. This generation will be searched through each cell to determine if it dies or lives. After assigning to the next generation, the initial is cleared and all life is reset to 0. \\
+\hline
+{\em $\ast$$\ast$B} & the next generation. This is the output or next generation. We will record the results of the initial matrix A to matrix B. \\
+\hline
+{\em rows} & the number of rows in the matrix assigned space \\
+\hline
+{\em cols} & the number of columns in the matrix assigned space \\
+\hline
+\end{DoxyParams}

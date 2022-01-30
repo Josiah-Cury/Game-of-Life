@@ -1,0 +1,46 @@
+\hypertarget{gl_8c}{}\section{gl.\+c File Reference}
+\label{gl_8c}\index{gl.\+c@{gl.\+c}}
+
+
+Conway\textquotesingle{}s Game of Life.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L2/\+S\+D\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sdl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}life.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for gl.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{gl_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Conway\textquotesingle{}s Game of Life. 
+
+Takes user\textquotesingle{}s input in the command line using getopt. Initializes the matrixes and begins to use sdl to display the game. Offers several options for border, color of sprites, sprite size, width and height of the screen, and life initialization pattern. \begin{DoxyAuthor}{Author}
+Josiah Cury 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+4/29/2019 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Implement more error checking to make sure the initialization pattern and the origin are within parameters. \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]there is little error checking, so if someone tries to set a point that is out of bounds, then the program crashes. \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{gl_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{gl_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{gl.\+c@{gl.\+c}!main@{main}}
+\index{main@{main}!gl.\+c@{gl.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+

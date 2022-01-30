@@ -1,0 +1,7 @@
+Script started on 2019-04-29 21:15:15-0600
+]0;josiah@josiah-VirtualBox: ~/cse113/game_of_life[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/cse113/game_of_life[00m$ ./life -w 800 -h 600 -s 4 -r 0 -g 150 -b 150 -e klein -o 60,60 -f ./conway/gosperglidergun_106..lif[A]0;josiah@josiah-VirtualBox: ~/cse113/game_of_life[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/cse113/game_of_life[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Plider_106.lif
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K./life -w 800 -h 600 -s 4 -r 0 -g 150 -b 150 -e klein -o 60,60 -f ./conway/glider_106.lif
+]0;josiah@josiah-VirtualBox: ~/cse113/game_of_life[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/cse113/game_of_life[00m$ exit
+exit
+
+Script done on 2019-04-29 21:15:31-0600
